@@ -1,0 +1,59 @@
+Instruções de modificação do Sitema para mudança de Local
+- configurar o arquivo = conectadb.php
+- configurar o arquivo = conectadbCPJ.php
+
+Arquivo: Consulta.php
+Linha 113 - window.location.href='http://localhost/hermes2.0/cad_lote.php';
+
+Arquivo: enviaemail_ressarcimento.php
+Linha 132 - $mail->AddAttachment( "C:/xampp/htdocs/Hermes2.0/arquivos/".$res_int_arquivo);
+
+Arquivo: Itens_enviados.php
+Linha 76 - printf('<td>%s</td>','<a href="http://localhost/hermes2.0/'.$var['int_arquivo'].'">'.$var['int_arquivo'].'</a>'); 
+
+
+Arquio: Itens_prontos.php
+Linha 81 - printf('<td>%s</td>','<a href="http://localhost/hermes2.0/'.$var['int_arquivo'].'">'.$var['int_arquivo'].'</a>'); 
+Linha 83 - printf('<td>%s</td>', '<a href="http://localhost/herme2.0/exluirlinha.php"><img src="imagens/DeleteRed.png" />.</a>');
+
+
+
+Modificações php.ini:
+
+-----
+; Default Value: E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED
+; Development Value: E_ALL
+; Production Value: E_ALL & ~E_DEPRECATED & ~E_STRICT
+; http://php.net/error-reporting
+error_reporting=E_ALL & ~E_NOTICE 
+-----
+; Default Value: On
+; Development Value: On
+; Production Value: Off
+; http://php.net/display-errors
+display_errors=off
+-----
+; Maximum allowed size for uploaded files.
+; http://php.net/upload-max-filesize
+upload_max_filesize=150M
+-----
+; Maximum number of files that can be uploaded via a single request
+max_file_uploads=20
+-----
+[Pdo_mysql]
+; If mysqlnd is used: Number of cache slots for the internal result set cache
+; http://php.net/pdo_mysql.cache_size
+pdo_mysql.cache_size=2000
+-----
+; Maximum amount of memory a script may consume (128MB)
+; http://php.net/memory-limit
+memory_limit=256M
+-----
+
+
+Modificações httpd.conf
+
+-----
+LoadModule ssl_module modules/mod_ssl.so
+-----
+Include "conf/extra/httpd-ssl.conf"

@@ -1,0 +1,134 @@
+body {
+	background:url(../imagens/BG4.jpg);
+}
+input{
+    background: #DCDCDC;
+    
+}
+fieldset{
+    background:;
+    border:#CCCCCC 1px solid;
+    padding: 10px;
+    -moz-border-radius: 5px 5px ;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+fieldset input, label{
+	margin-left:10px;
+}
+legend{
+    background-color: #FFFFFF;
+}
+
+#boxExterno{
+	margin-top: 5%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 30px;
+    margin-left:25%;
+    margin-right:25%;
+
+	
+}
+
+#boxInterno{
+    width:auto;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+}
+.obs-label{
+    font: normal 14px courier !important;
+    background-color: #FFFF00;
+}
+.box_buttons{
+	padding: 0px;
+    margin-left:25%;
+    margin-right:25%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 0px;
+	
+}
+.enviaemail ul {
+	text-align: center;
+	display: block;
+}
+.enviaemail ul li{
+	display: inline;
+	font: 16px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.menu{
+	height: 30px;
+	width: auto;
+
+}
+.box{
+	background-color:#333333;
+	width: 900px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+#versionBar {
+	background-color:#212121;
+	position:fixed;
+	width:100%;
+	height:35px;
+	bottom:0;
+	left:0;
+	text-align:center;
+	line-height:35px;
+	z-index:11;
+	-webkit-box-shadow: black 0px 10px 10px -10px inset;
+	-moz-box-shadow: black 0px 10px 10px -10px inset;
+	box-shadow: black 0px 10px 10px -10px inset;
+	margin-top: 10px;
+}
+.copyright{
+	text-align:center; font-size:14px; color:#CCC;
+}
+.copyright a{
+	color:#A31F1A; text-decoration:none;
+} 
+
+
+.imgpos {
+position:absolute;
+left:50%;
+top:50%;
+margin-left:-110px;
+margin-top:-60px;
+width:300px;
+height:200px;
+z-index:2;
+font-size:18px;
+}
+.imgpos img{
+	text-align: center;
+}
+
+#botao{
+	margin: 20px;
+}
+#botao input{
+	padding: 10px;
+	font-size: 20px;
+	-webkit-box-shadow: black 0px 10px 10px -10px inset;
+	-moz-box-shadow: black 0px 10px 10px -10px inset;
+	box-shadow: black 0px 10px 10px -10px inset;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+.datatablecustom{
+	margin: 0 auto;
+	padding: 30px;
+}
+
+
